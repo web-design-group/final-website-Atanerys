@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Dita-Sweet" ;
+    src: url("Dita-Sweet.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+     font-display: swap;
+}
+
+@font-face {
+    font-family: "Courier New" ;
+    src: url("ofont.ru_Courier New.ttf") format(opentype);
+    font-style: normal;
+   font-weight: normal;
+}
+
+body{
+font-family: "Courier New"; 
+font-weight: normal;
+font-size: 28px;
+background: linear-gradient(180deg, white 0%, #0057ff 100%);
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease-in;
+    color: black;
+}
+
+a:hover{
+    color: #276CF6;
+    transform: scale(1.05)
+
+}
+
+a:active{
+    color: #16439f;
+    transform: scale(0.95)
+
+}
+
+
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding: 43px 0;
+    
+}
+
+header nav {
+    float: right;
+    width: 80%;
+    font-size: max(18px, 1.25vw);
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.ticker-wrapper {
+  line-height: 1; 
+}
+
+.ticker-text {
+  font-family: "Dita-Sweet";
+  display: block; 
+  
+}
+
+#ticker-text1 {
+  display: inline-block;
+  font-family: "Dita-Sweet";
+  margin-top: -70px; 
+}
+#ticker-text2 {
+  font-family: "Dita-Sweet"; 
+  display: inline-block;
+  margin-top: -70px; 
+}
+
+#ticker-container {
+  white-space: nowrap;
+  width:100%;
+}
+.ticker-container {
+  font-size: 18em;
+  overflow: hidden; 
+   white-space: nowrap;
+}
+
+
+
+.nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+
+
+
+.yellow-box {
+  background: #fffb03;
+  border-radius: 90px;
+  
+  max-width: 650px;
+  min-width: 400px;
+  height: 290px;
+}
+
+.dlin{
+  min-width:400px;
+  max-width: 550px;
+  padding-bottom: 100px;
+}
+
+.form-control {
+  border-radius: 100px;
+  border: none;
+  padding: 20px 30px;
+}
+
+.footer-width{
+    width: 60%;
+}
+
+.form-control:focus::placeholder {
+  color: transparent; 
+}
+
+footer img:not(.hightpic) {
+    display: inline-block;
+    transition: transform 0.2s ease-in;
+    cursor: pointer;
+}
+
+footer img:not(.hightpic):hover {
+    color: #276CF6;
+    transform: scale(1.05);
+}
+
+footer img:not(.hightpic):active {
+    color: #16439f;
+    transform: scale(0.95);
+}

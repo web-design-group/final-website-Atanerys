@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  font-family: "Dita-Sweet";
+  src: url("Dita-Sweet.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Courier New";
+  src: url("ofont.ru_Courier New.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body{
+    font-family: "Courier New"; 
+    font-weight: 400; 
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease-in;
+}
+
+a:hover{
+    color: #276CF6;
+    transform: scale(1.05)
+
+}
+
+a:active{
+    color: #16439f;
+    transform: scale(0.95)
+
+}
+
+.hightpic{
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding: 43px 0;
+    
+}
+
+header nav {
+    float: right;
+    width: 80%;
+    font-size: max(18px, 1.25vw);
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+ header nav ul li a{
+    color: #000;
+}
+
+
+
+main {
+    background-image: url("../Image/fon2.png");
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.textmegdu{
+
+    justify-self: center;
+    margin-top: 110px;
+    margin-bottom: -210px ;
+    font-size: max(24px, 1.875vw);
+}
+.poster {
+  width: 100%;
+  max-width: 1360px;
+  margin: 250px auto;
+  border-radius: 20px;
+  
+}
+
+.poster-images {
+  display: flex; 
+  justify-content: center;
+}
+
+.poster-images img {
+  width: 33.333%;      
+  height: auto;           
+}
+
+.poster-info {
+  background-color: #276CF6;
+  color: white;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 100px 100px;
+}
+
+.poster-infotext  {
+  display: flex;
+  flex-direction: column;
+}
+
+.poster-infotext h2 {
+  font-family: "Dita-Sweet"; 
+  font-size: max(32px, 3.33vw);
+  margin-bottom: 20px;
+}
+
+.poster-infotext p {
+  font-size: max(18px, 1.3vw);
+}
+
+.bigbutton {
+  display: flex;
+  max-width: 1360px;
+  margin: 0 auto; 
+  align-items: center;
+  justify-content: space-around; 
+}
+
+.button-image {
+  width: 30%;   
+  height: auto;  
+  display: block;
+}
+
+.textbutton {
+  font-size: 8vw;
+  font-family: "Dita-Sweet";
+  pointer-events: none;
+  padding-bottom: 11vh; 
+}
+
+
+#srela{
+padding-bottom: 20vh;
+width: 30%;   
+height: auto; 
+}
+
+footer {
+    margin: auto;
+    padding-bottom: 20px;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.zigzagbtn {
+  width: 16vw;
+  height: 7vw;
+  background-image: url("../Image/Component6.png"); 
+  background-color: transparent;
+  border: none;    
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.2s ease, transform 0.2s ease;
+}
+
+.zigzagbtn:hover {
+  background-image: url("../Image/hover4.png"); 
+  transform: scale(1.05); 
+}
+
+.zigzagbtn:active {
+  background-image: url("../Image/click.png");
+  transform: scale(0.95); 
+}
+footer img:not(.hightpic) {
+    display: inline-block;
+    transition: transform 0.2s ease-in;
+    cursor: pointer;
+}
+
+footer img:not(.hightpic):hover {
+    transform: scale(1.05);
+}
+
+footer img:not(.hightpic):active {
+    transform: scale(0.95);
+}

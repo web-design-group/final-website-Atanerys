@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Dita-Sweet" ;
+    src: url("Dita-Sweet.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+     font-display: swap;
+}
+
+@font-face {
+    font-family: "Courier New" ;
+    src: url("ofont.ru_Courier New.ttf") format(opentype);
+    font-style: normal;
+   font-weight: normal;
+}
+
+body{
+    font-family: "Courier New"; 
+    font-weight: normal;
+    font-size: 28px;
+  background: 
+    radial-gradient(circle, #276CF6, transparent 50%),
+    radial-gradient(circle, #FDFF3E, transparent 50%),
+     radial-gradient(circle, #276CF6, transparent 50%);
+  background-size: 1500px 1500px, 1200px 1200px, 1200px 1200px;
+  background-position: calc(0px - 1200px/2) calc(200px - 1200px/2), 
+    calc(2000px - 1200px/2) calc(100px - 1200px/2),
+    calc(1900px - 1200px/2) calc(1000px - 1200px/2);
+
+  background-repeat: no-repeat;
+  min-height: 100vh 
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease-in;
+}
+
+a:hover{
+    color: #276CF6;
+    transform: scale(1.05)
+
+}
+
+a:active{
+    color: #16439f;
+    transform: scale(0.95)
+
+}
+
+.hightpic{
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding: 43px 0;
+    
+}
+
+header nav {
+    float: right;
+    width: 80%;
+    font-size: max(18px, 1.25vw);
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+ header nav ul li a{
+    color: #000;
+}
+
+
+#ticker-text1 {
+  display: inline-block;
+  font-family: "Dita-Sweet";
+  margin-top: -70px; 
+}
+#ticker-text2 {
+  font-family: "Dita-Sweet"; 
+  display: inline-block;
+  margin-top: -70px; 
+}
+
+#ticker-container {
+  white-space: nowrap;
+  width:100%;
+}
+.ticker-container {
+  font-size: 18em;
+  overflow: hidden; 
+   white-space: nowrap;
+}
+
+
+
+.card {
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  padding: 40px 60px 60px 40px;
+  max-width: 1700px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 22px;
+  border-radius: 0 100px 100px 0;
+  background: linear-gradient(to right, rgb(253,255,62), white);
+  
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, rgb(253,255,62), white);
+  opacity: 0;
+  transition: opacity 0.9s ease, transform 0.4s ease-in;
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.card:active:not(:has(.btn:active)){
+  background: rgb(253,255,62);
+}
+
+.card:active::before {
+  display: none;
+}
+.card-second {
+   max-width: 1360px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(12,1fr);
+   
+}
+
+.card-third {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12,  1fr);
+    grid-column: 3 / 12;
+    column-gap: 30px;
+}
+
+.card-date {
+  display: grid;
+  justify-items: center;
+  grid-column: span 1;
+  font-family: "Dita-Sweet";
+}
+
+.card-date .day {
+  font-size: 3em ;
+}
+
+.card-date .month {
+  font-size: 2em;
+}
+
+
+.card-image {
+  min-width: 200px;
+  max-width: 340px;
+  grid-column: span 4;
+  align-items: center;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 150px 150px 0 0;
+}
+
+
+.card-content {  
+  grid-column: span 7;        
+  max-width: 550px;
+  
+}
+
+.card-content h3 {
+  margin: 60px 0 20px;
+  font-size: 36px;
+}
+
+.price {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 12px 50px;
+  margin-bottom: 20px;
+  border: 1px solid #d8d8d8;
+  border-radius: 30px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  transition:  transform 0.4s ease-in;
+}
+.btn:hover {
+    background-color: #B0CAFF;
+    transform: scale(1.05)
+}
+
+.btn:active {
+    background-color: #276CF6;
+    transform: scale(1)
+}
+.desc {
+  max-width: 600px;
+  font-size: 24px;
+}
+
+footer{
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 1360px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    padding-bottom: 20px;
+    
+    
+}
+
+.ikon{
+    
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-start: 1;
+    grid-column-end: 12;
+
+}
+
+footer img:not(.hightpic) {
+    display: inline-block;
+    transition: transform 0.2s ease-in;
+    cursor: pointer;
+}
+
+footer img:not(.hightpic):hover {
+    transform: scale(1.05);
+}
+
+footer img:not(.hightpic):active {
+    transform: scale(0.95);
+}

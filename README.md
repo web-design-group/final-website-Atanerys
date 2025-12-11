@@ -1,3 +1,3 @@
-Пичуева Рената
-# final-website-Atanerys
-final-website-Atanerys created by GitHub Classroom
+
+# Пичуева Рената Станиславовна 3-МД-15
+
